@@ -4,8 +4,10 @@ import math
 import csv
 import sys
 import getopt
+import importlib
 from multiprocessing import Process, Queue
-
+importlib.reload(sys)
+sys.setdefaultencoding('UTF8')
 HEADER_SIZE = 32 + 4 + 8
 BUFFER_SIZE = 3_000_000
 
